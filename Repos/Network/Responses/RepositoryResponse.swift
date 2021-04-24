@@ -20,10 +20,11 @@ public struct RepositoryResponse: Codable {
     public var isPrivate: Bool  { return _isPrivate ?? false }
     public var fork: Bool  { return _fork ?? false }
     
-    public var owner: OwnerResponse?
+    public var owner: OwnerResponse? {return _owner}
 
     private var _id: Int?
     private var _nodeId: String?
+    private var _owner: OwnerResponse?
     private var _name: String?
     private var _fullName: String?
     private var _url: String?
@@ -35,6 +36,7 @@ public struct RepositoryResponse: Codable {
     
     private enum CodingKeys : String, CodingKey {
         case _id = "id"
+        case _owner = "owner"
         case _nodeId = "node_id"
         case _name = "name"
         case _fullName = "full_name"

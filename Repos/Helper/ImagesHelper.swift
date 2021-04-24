@@ -11,7 +11,6 @@ import UIKit
 class ImagesHelper {
     
     func downloadImage(from url: URL , success:@escaping((_ image:UIImage)->()),failure:@escaping ((_ msg:String)->())){
-        print("Download Started")
         getData(from: url) { data, response, error in
             guard let data = data, error == nil else {
                 failure("Image cant download from G+ or fb server")

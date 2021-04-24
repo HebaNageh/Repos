@@ -26,12 +26,6 @@ class RepoInfoTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func loadData(repoInfo: RepositoryResponse ) {
-        
-        self.repoName.text = repoInfo.name
-        self.ownerName.text = repoInfo.owner?.login
-    }
-    
     func loadImage(url: String) {
         if let url = URL(string: url) {
             let imagesHelper = ImagesHelper()

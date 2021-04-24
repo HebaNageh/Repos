@@ -32,7 +32,8 @@ class ReposListViewController: BaseViewController {
         
         tableView.showsHorizontalScrollIndicator = false
         tableView.showsVerticalScrollIndicator = false
-        tableView.register(RepoInfoTableViewCell.self, forCellReuseIdentifier: "RepoInfoTableViewCell")
+        tableView.rowHeight = 160
+
     }
     
     override class func instantFromStoryboard() -> (ReposListViewController?) {
@@ -82,7 +83,8 @@ extension ReposListViewController: UITableViewDelegate , UITableViewDataSource {
         }
         if let repoInfo = repos?[indexPath.row] {
             cell.loadImage(url: repoInfo.owner?.avatarUrl ?? "")
-            cell.loadData(repoInfo: repoInfo)
+            cell.repoName.text = repoInfo.name
+            cell.ownerName.text = repoInfo.owner?.login
         }
         return cell
     }
