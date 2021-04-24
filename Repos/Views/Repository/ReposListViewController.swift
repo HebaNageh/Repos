@@ -48,6 +48,7 @@ class ReposListViewController: BaseViewController {
         reposViewModel.getAllRepos().done { response in
             self.progress.dismiss()
             self.repos = response
+            self.filteredRepos = response
             self.tableView.reloadData()
         }.ensure {
             self.progress.dismiss()
@@ -74,14 +75,14 @@ class ReposListViewController: BaseViewController {
 extension ReposListViewController: UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        repos?.count ?? 0
+        filteredRepos?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "RepoInfoTableViewCell", for: indexPath) as? RepoInfoTableViewCell else {
             return UITableViewCell()
         }
-        if let repoInfo = repos?[indexPath.row] {
+        if let repoInfo = filteredRepos?[indexPath.row] {
             cell.loadImage(url: repoInfo.owner?.avatarUrl ?? "")
             cell.repoName.text = repoInfo.name
             cell.ownerName.text = repoInfo.owner?.login
@@ -104,13 +105,12 @@ extension ReposListViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         filteredRepos?.removeAll()
-        if let searchText = searchBar.text, !searchText.isEmpty {
+        if let searchText = searchBar.text?.localizedLowercase , !searchText.isEmpty {
             if let repos = self.repos {
                 self.filteredRepos = repos.filter { repo in
                     let repoName = repo.name
                     return repoName.contains(searchText)
                 }
-                self.repos = filteredRepos ?? []
                 tableView.reloadData()
             }
         } else {
