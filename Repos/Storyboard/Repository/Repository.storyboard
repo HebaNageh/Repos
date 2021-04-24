@@ -107,6 +107,10 @@
                             <constraint firstItem="Y86-AJ-G1c" firstAttribute="centerX" secondItem="ihS-Kh-um5" secondAttribute="centerX" id="z7M-ze-Sm4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="gAY-vP-NlL" id="hTf-bu-k4f"/>
+                        <outlet property="tableView" destination="Y86-AJ-G1c" id="5ps-ZX-waa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8D-XL-TuB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

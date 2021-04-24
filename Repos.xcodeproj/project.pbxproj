@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E49A7A448AD85EAE5771277 /* Pods_Repos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7ABD5649F877EC7637C8C59 /* Pods_Repos.framework */; };
 		764E4E552633970F002D5ACA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E4E542633970F002D5ACA /* Constants.swift */; };
 		764E4E5B2633AD89002D5ACA /* Repository.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764E4E5A2633AD89002D5ACA /* Repository.storyboard */; };
 		764E4E672633AE0B002D5ACA /* ReposListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E4E662633AE0B002D5ACA /* ReposListViewController.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69DBE9DEB59F78B52652F990 /* Pods-Repos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repos.release.xcconfig"; path = "Target Support Files/Pods-Repos/Pods-Repos.release.xcconfig"; sourceTree = "<group>"; };
 		764E4E542633970F002D5ACA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		764E4E5A2633AD89002D5ACA /* Repository.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repository.storyboard; sourceTree = "<group>"; };
 		764E4E662633AE0B002D5ACA /* ReposListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,8 @@
 		76A6A71F263378A900DC7258 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		76A6A7252633794E00DC7258 /* ReposRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRequest.swift; sourceTree = "<group>"; };
 		76A6A72B26337B2100DC7258 /* ReposRequestImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRequestImp.swift; sourceTree = "<group>"; };
+		A590E7B124D1D0E7FC7A48FF /* Pods-Repos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Repos.debug.xcconfig"; path = "Target Support Files/Pods-Repos/Pods-Repos.debug.xcconfig"; sourceTree = "<group>"; };
+		A7ABD5649F877EC7637C8C59 /* Pods_Repos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Repos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E49A7A448AD85EAE5771277 /* Pods_Repos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02BCE73A5F9F6C5D2675B744 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7ABD5649F877EC7637C8C59 /* Pods_Repos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		764E4E592633AD66002D5ACA /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +148,8 @@
 				76A6A6DA26334F4B00DC7258 /* ReposTests */,
 				76A6A6E526334F4B00DC7258 /* ReposUITests */,
 				76A6A6C226334F4B00DC7258 /* Products */,
+				9A2CB9DAF925B503368206D4 /* Pods */,
+				02BCE73A5F9F6C5D2675B744 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -279,6 +294,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		9A2CB9DAF925B503368206D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A590E7B124D1D0E7FC7A48FF /* Pods-Repos.debug.xcconfig */,
+				69DBE9DEB59F78B52652F990 /* Pods-Repos.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,9 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76A6A6EB26334F4B00DC7258 /* Build configuration list for PBXNativeTarget "Repos" */;
 			buildPhases = (
+				878CEF63133EC5F0C04F7669 /* [CP] Check Pods Manifest.lock */,
 				76A6A6BD26334F4B00DC7258 /* Sources */,
 				76A6A6BE26334F4B00DC7258 /* Frameworks */,
 				76A6A6BF26334F4B00DC7258 /* Resources */,
+				F6D2E1A77C852EACA4B52E38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -404,6 +431,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		878CEF63133EC5F0C04F7669 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Repos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6D2E1A77C852EACA4B52E38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Repos/Pods-Repos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Repos/Pods-Repos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Repos/Pods-Repos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76A6A6BD26334F4B00DC7258 /* Sources */ = {
@@ -597,6 +666,7 @@
 		};
 		76A6A6EC26334F4B00DC7258 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A590E7B124D1D0E7FC7A48FF /* Pods-Repos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -616,6 +686,7 @@
 		};
 		76A6A6ED26334F4B00DC7258 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69DBE9DEB59F78B52652F990 /* Pods-Repos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

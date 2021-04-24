@@ -14,18 +14,23 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="VYi-Hw-PGB" kind="relationship" relationship="rootViewController" id="bS5-9e-EsC"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPB-Im-td8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="271" y="238"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--ReposListViewController-->
         <scene sceneID="wnI-d4-0od">
             <objects>
-                <viewControllerPlaceholder id="VYi-Hw-PGB" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Repository" referencedIdentifier="ReposListViewController" id="VYi-Hw-PGB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="JJa-Vp-TNt"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAs-ZG-JM3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="167"/>
+            <point key="canvasLocation" x="994" y="238"/>
         </scene>
     </scenes>
 </document>

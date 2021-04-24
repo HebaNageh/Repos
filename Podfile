@@ -8,5 +8,6 @@ target 'Repos' do
   #Pods for Repos
 
   pod 'PromiseKit'
+  pod 'JGProgressHUD'
 
 end
