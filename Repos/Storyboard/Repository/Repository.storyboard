@@ -91,6 +91,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="C8e-tx-X62" id="Njx-lD-VqE"/>
+                                    <outlet property="delegate" destination="C8e-tx-X62" id="OxI-tj-Lwr"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cSb-po-bFe"/>
