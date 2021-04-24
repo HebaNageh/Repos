@@ -47,10 +47,13 @@ class ReposListViewController: BaseViewController {
         reposViewModel.getAllRepos().done { response in
             self.progress.dismiss()
             self.repos = response
+            self.tableView.reloadData()
         }.ensure {
             self.progress.dismiss()
+            self.tableView.reloadData()
         }.catch { (error) in
             self.progress.dismiss()
+            self.tableView.reloadData()
             //show error message
         }
     }
