@@ -7,7 +7,8 @@
 
 import Foundation
 
-public struct RepositoryResponse: Decodable {
+
+public struct RepositoryResponse: Codable {
     
     public var id: Int  { return _id ?? 0 }
     public var nodeId: String  { return _nodeId ?? "" }
@@ -46,7 +47,7 @@ public struct RepositoryResponse: Decodable {
 
 }
 
-public struct OwnerResponse: Decodable {
+public struct OwnerResponse: Codable {
     
     public var id: Int  { return _id ?? 0 }
     public var nodeId: String  { return _nodeId ?? "" }

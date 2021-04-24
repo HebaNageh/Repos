@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		764E4E552633970F002D5ACA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E4E542633970F002D5ACA /* Constants.swift */; };
 		76A6A6C526334F4B00DC7258 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A6C426334F4B00DC7258 /* AppDelegate.swift */; };
 		76A6A6C726334F4B00DC7258 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A6C626334F4B00DC7258 /* SceneDelegate.swift */; };
 		76A6A6C926334F4B00DC7258 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A6C826334F4B00DC7258 /* ViewController.swift */; };
@@ -17,8 +18,11 @@
 		76A6A6E726334F4B00DC7258 /* ReposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A6E626334F4B00DC7258 /* ReposUITests.swift */; };
 		76A6A7022633527E00DC7258 /* ServiceEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A7012633527E00DC7258 /* ServiceEnviroment.swift */; };
 		76A6A70A2633528D00DC7258 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A7092633528D00DC7258 /* NetworkProvider.swift */; };
-		76A6A710263362CB00DC7258 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A70F263362CB00DC7258 /* TargetType.swift */; };
+		76A6A710263362CB00DC7258 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A70F263362CB00DC7258 /* RequestType.swift */; };
 		76A6A718263363D800DC7258 /* RepositoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A717263363D800DC7258 /* RepositoryResponse.swift */; };
+		76A6A720263378A900DC7258 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A71F263378A900DC7258 /* HttpMethod.swift */; };
+		76A6A7262633794E00DC7258 /* ReposRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A7252633794E00DC7258 /* ReposRequest.swift */; };
+		76A6A72C26337B2100DC7258 /* ReposRequestImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A72B26337B2100DC7258 /* ReposRequestImp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		764E4E542633970F002D5ACA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		76A6A6C126334F4B00DC7258 /* Repos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A6A6C426334F4B00DC7258 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76A6A6C626334F4B00DC7258 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,8 +60,11 @@
 		76A6A6E826334F4B00DC7258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76A6A7012633527E00DC7258 /* ServiceEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEnviroment.swift; sourceTree = "<group>"; };
 		76A6A7092633528D00DC7258 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
-		76A6A70F263362CB00DC7258 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		76A6A70F263362CB00DC7258 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		76A6A717263363D800DC7258 /* RepositoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryResponse.swift; sourceTree = "<group>"; };
+		76A6A71F263378A900DC7258 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		76A6A7252633794E00DC7258 /* ReposRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRequest.swift; sourceTree = "<group>"; };
+		76A6A72B26337B2100DC7258 /* ReposRequestImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposRequestImp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +160,6 @@
 				76A6A70E2633529200DC7258 /* Base */,
 				76A6A7002633526B00DC7258 /* Responses */,
 				76A6A6FF2633526400DC7258 /* Requests */,
-				76A6A7012633527E00DC7258 /* ServiceEnviroment.swift */,
-				76A6A7092633528D00DC7258 /* NetworkProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -208,6 +214,8 @@
 		76A6A6FF2633526400DC7258 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				76A6A7252633794E00DC7258 /* ReposRequest.swift */,
+				76A6A72B26337B2100DC7258 /* ReposRequestImp.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -223,7 +231,11 @@
 		76A6A70E2633529200DC7258 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				76A6A70F263362CB00DC7258 /* TargetType.swift */,
+				76A6A7092633528D00DC7258 /* NetworkProvider.swift */,
+				76A6A7012633527E00DC7258 /* ServiceEnviroment.swift */,
+				76A6A70F263362CB00DC7258 /* RequestType.swift */,
+				76A6A71F263378A900DC7258 /* HttpMethod.swift */,
+				764E4E542633970F002D5ACA /* Constants.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -358,10 +370,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76A6A710263362CB00DC7258 /* TargetType.swift in Sources */,
+				76A6A710263362CB00DC7258 /* RequestType.swift in Sources */,
+				764E4E552633970F002D5ACA /* Constants.swift in Sources */,
 				76A6A6C926334F4B00DC7258 /* ViewController.swift in Sources */,
 				76A6A6C526334F4B00DC7258 /* AppDelegate.swift in Sources */,
 				76A6A718263363D800DC7258 /* RepositoryResponse.swift in Sources */,
+				76A6A72C26337B2100DC7258 /* ReposRequestImp.swift in Sources */,
+				76A6A7262633794E00DC7258 /* ReposRequest.swift in Sources */,
+				76A6A720263378A900DC7258 /* HttpMethod.swift in Sources */,
 				76A6A7022633527E00DC7258 /* ServiceEnviroment.swift in Sources */,
 				76A6A6C726334F4B00DC7258 /* SceneDelegate.swift in Sources */,
 				76A6A70A2633528D00DC7258 /* NetworkProvider.swift in Sources */,

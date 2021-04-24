@@ -1,29 +1,12 @@
 //
-//  TargetType.swift
+//  HttpMethod.swift
 //  Repos
 //
-//  Created by Heba Nageh on 23/04/2021.
+//  Created by Heba Nageh on 24/04/2021.
 //
 
 import Foundation
 
-public protocol TargetType {
-
-    /// The target's base `URL`.
-    var baseURL: URL { get }
-
-    /// The path to be appended to `baseURL` to form the full `URL`.
-    var path: String { get }
-
-    /// The HTTP method used in the request.
-    var method: HTTPMethod { get }
-
-    /// The type of HTTP task to be performed.
-    var task: Task { get }
-
-    /// The headers to be used in the request.
-    var headers: [String: String]? { get }
-}
 
 public struct HTTPMethod: RawRepresentable, Equatable, Hashable {
     /// `CONNECT` method.
@@ -50,18 +33,4 @@ public struct HTTPMethod: RawRepresentable, Equatable, Hashable {
     public init(rawValue: String) {
         self.rawValue = rawValue
     }
-}
-
-
-public enum Task {
-
-    /// A request with no additional data.
-    case requestPlain
-
-    /// A requests body set with data.
-    case requestData(Data)
-
-    /// A request body set with `Encodable` type
-    case requestJSONEncodable(Encodable)
-    
 }
