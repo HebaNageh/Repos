@@ -12,6 +12,7 @@
 		764E4E672633AE0B002D5ACA /* ReposListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E4E662633AE0B002D5ACA /* ReposListViewController.swift */; };
 		764E4E6F2633AE1C002D5ACA /* RepoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E4E6E2633AE1C002D5ACA /* RepoDetailsViewController.swift */; };
 		764E4E772633B080002D5ACA /* RepoInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E4E762633B080002D5ACA /* RepoInfoTableViewCell.swift */; };
+		764E4E7D2633B23F002D5ACA /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764E4E7C2633B23F002D5ACA /* DateHelper.swift */; };
 		76A6A6C526334F4B00DC7258 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A6C426334F4B00DC7258 /* AppDelegate.swift */; };
 		76A6A6C726334F4B00DC7258 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A6C626334F4B00DC7258 /* SceneDelegate.swift */; };
 		76A6A6C926334F4B00DC7258 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A6A6C826334F4B00DC7258 /* BaseViewController.swift */; };
@@ -52,6 +53,7 @@
 		764E4E662633AE0B002D5ACA /* ReposListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewController.swift; sourceTree = "<group>"; };
 		764E4E6E2633AE1C002D5ACA /* RepoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsViewController.swift; sourceTree = "<group>"; };
 		764E4E762633B080002D5ACA /* RepoInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoInfoTableViewCell.swift; sourceTree = "<group>"; };
+		764E4E7C2633B23F002D5ACA /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		76A6A6C126334F4B00DC7258 /* Repos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A6A6C426334F4B00DC7258 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76A6A6C626334F4B00DC7258 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		764E4E7B2633B22A002D5ACA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				764E4E7C2633B23F002D5ACA /* DateHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		76A6A6B826334F4B00DC7258 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 		76A6A6C326334F4B00DC7258 /* Repos */ = {
 			isa = PBXGroup;
 			children = (
+				764E4E7B2633B22A002D5ACA /* Helper */,
 				76A6A6FE2633525100DC7258 /* ViewModel */,
 				76A6A6FD2633524900DC7258 /* Model */,
 				76A6A6FB26334FBB00DC7258 /* Storyboard */,
@@ -399,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764E4E7D2633B23F002D5ACA /* DateHelper.swift in Sources */,
 				76A6A710263362CB00DC7258 /* RequestType.swift in Sources */,
 				764E4E552633970F002D5ACA /* Constants.swift in Sources */,
 				76A6A6C926334F4B00DC7258 /* BaseViewController.swift in Sources */,

@@ -9,6 +9,12 @@ import UIKit
 
 class RepoInfoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var shadowView: UIView!
+    @IBOutlet weak var repoName: UILabel!
+    @IBOutlet weak var ownerName: UILabel!
+    @IBOutlet weak var createdAt: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
