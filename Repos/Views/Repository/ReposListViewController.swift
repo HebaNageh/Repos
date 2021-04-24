@@ -110,6 +110,8 @@ extension ReposListViewController: UISearchBarDelegate {
                     let repoName = repo.name
                     return repoName.contains(searchText)
                 }
+                self.repos = filteredRepos ?? []
+                tableView.reloadData()
             }
         } else {
             self.filteredRepos = self.repos
