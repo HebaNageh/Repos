@@ -85,6 +85,7 @@
                                         <connections>
                                             <outlet property="createdAt" destination="qHk-F5-6jW" id="e1A-hR-6oh"/>
                                             <outlet property="ownerName" destination="6Nw-aG-Iqd" id="H1O-Wm-Kpo"/>
+                                            <outlet property="repoImage" destination="J1h-d1-LQv" id="MMS-py-8bS"/>
                                             <outlet property="repoName" destination="uhQ-l6-GJL" id="uvQ-Sy-Vz6"/>
                                             <outlet property="shadowView" destination="DuV-LW-Ddw" id="Tk3-uh-3nl"/>
                                         </connections>

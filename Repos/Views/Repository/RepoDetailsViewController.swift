@@ -8,6 +8,8 @@
 import UIKit
 
 class RepoDetailsViewController: BaseViewController {
+    
+    var repoDetails: RepositoryResponse?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +18,12 @@ class RepoDetailsViewController: BaseViewController {
     }
     
 
+    override class func instantFromStoryboard() -> (RepoDetailsViewController?) {
+        
+        let storyboardName: String = "Repository"
+        let storyBoard = UIStoryboard(name: storyboardName, bundle: nil)
+        return storyBoard.instantiateViewController(withIdentifier: "RepoDetailsViewController") as? RepoDetailsViewController
+    }
     /*
     // MARK: - Navigation
 

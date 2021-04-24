@@ -17,5 +17,9 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    class func instantFromStoryboard() -> UIViewController? {
+        
+        return UIViewController()
+    }
 }
 
